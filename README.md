@@ -40,7 +40,7 @@ Ensure you have `pipenv` installed to manage the Python environment.
 pipenv install -r requirements.txt
 python run_vfl_basic_model.py
 ```
-The above command runs the VFL model for four clients without client dropout. In order to change the number of clients, change the default_organization_num variable in run_vfl_basic_model.py. For random client drop out patterns, change the dropout_probability variable, and for changing the number of clients, default_organization_num variable in the run_vfl_base_model_with_random_client_dropouts.py file and run the below command.
+The above command runs the VFL model for four clients without client dropout. In order to change the number of clients, change the `default_organization_num` variable in `run_vfl_basic_model.py`. For random client drop out patterns, change the dropout_probability variable, and for changing the number of clients, default_organization_num variable in the run_vfl_base_model_with_random_client_dropouts.py file and run the below command.
 ```
 python run_vfl_base_model_with_random_client_dropouts.py
 ```
