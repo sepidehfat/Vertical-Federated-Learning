@@ -36,7 +36,7 @@ r
 
 def run_base_model(args):
 	
-	vfl_model = Vertical_FL_Train(active_clients=active_clients)
+	
 	test_acc_sum = 0
 	# Initialize arrays to accumulate results
 	train_loss_array_sum = np.zeros(args.epochs)
@@ -47,6 +47,7 @@ def run_base_model(args):
 	test_acc_array = []
 	
 	for i in range(num_iterations):
+		vfl_model = Vertical_FL_Train(active_clients=active_clients)
 		print("Iteration: ", i)
 		train_loss_array, val_loss_array, train_auc_array, val_auc_array, test_acc = vfl_model.run(args, learning_rates, batch_size)
 		train_loss_array_sum += np.array(train_loss_array)
