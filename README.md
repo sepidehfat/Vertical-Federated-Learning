@@ -49,5 +49,5 @@ To drop out clients in the middle of the training uncomment lines 204 ans 205 in
 
 In order to run the code for different optimizers, run the following command. Replace the `name_of_optimizer` with one of the available options: `{Adam, AdaGrad, SGD, RMSprop}`
 ```
-python  optimizers_vertical_FL.py --optimizer {naem_of_optimizer}
+python  optimizers_vertical_FL.py --optimizer {name_of_optimizer}
 ```
