@@ -20,7 +20,7 @@ hyper_parameters = {
 dataset = 'MNIST'
 default_organization_num = '10'
 num_default_epochs = 60
-num_iterations = 1
+num_iterations = 10
 dropout_probability = 0.7 # Probability of dropping a client
 
 one_hot = False
