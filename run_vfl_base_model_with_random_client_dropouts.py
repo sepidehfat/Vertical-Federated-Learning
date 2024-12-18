@@ -37,7 +37,7 @@ def generate_active_clients(num_clients, dropout_probability):
 
 
 def run_base_model_with_random_client_dropout(args):
-    vfl_model = Vertical_FL_Train(active_clients=None)
+    
     test_acc_sum = 0
     
     # Initialize arrays to accumulate results
@@ -48,6 +48,7 @@ def run_base_model_with_random_client_dropout(args):
     test_acc_array = []
 
     for i in range(num_iterations):
+        vfl_model = Vertical_FL_Train(active_clients=None)
         print(f"Iteration: {i + 1}")
 
         # Randomly drop clients in each iteration
