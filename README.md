@@ -38,7 +38,14 @@ Key changes include:
 Ensure you have `pipenv` installed to manage the Python environment.
 ```
 pipenv install -r requirements.txt
-Python torch_vertical_FL_train_dropout_clients.py
+python run_vfl_basic_model.py
 ```
+The above command runs the VFL model for four clients without client dropout. In order to change the number of clients, change the default_organization_num variable in run_vfl_basic_model.py. For random client drop out patterns, change the dropout_probability variable, and for changing the number of clients, default_organization_num variable in the run_vfl_base_model_with_random_client_dropouts.py file and run the below command.
+```
+python run_vfl_base_model_with_random_client_dropouts.py
+```
+In order to change which client to dropout during start of the training toggle the active_clients variable in run_vfl_basic_model.py
+To drop out clients in the middle of the training uncomment lines 204 ans 205 in torch_vertical_FL_train_base_model.py file.
+
 You dont have to run the code using the args listed in the code. You can run the code directly using the above command. 
 
