@@ -47,4 +47,7 @@ python run_vfl_base_model_with_random_client_dropouts.py
 In order to change which client to dropout during start of the training toggle the `active_clients` variable in `run_vfl_basic_model.py`.
 To drop out clients in the middle of the training uncomment lines 204 ans 205 in `torch_vertical_FL_train_base_model.py` file.
 
-
+In order to run the code for different optimizers, run the following command. Replace the `name_of_optimizer` with one of the available options: `{Adam, AdaGrad, SGD, RMSprop}`
+```
+python  optimizers_vertical_FL.py --optimizer {naem_of_optimizer}
+```
